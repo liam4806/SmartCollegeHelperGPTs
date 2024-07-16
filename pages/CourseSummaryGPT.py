@@ -29,6 +29,8 @@ llm = ChatOpenAI(temperature= 0.1, streaming= True,
         docuGPT.ChatCallbackHandler(),
     ])
 
+summary_llm = ChatOpenAI(temperature= 0.1, streaming= True)
+
 memory_llm = ChatOpenAI(temperature= 0.1)
 
 st.markdown(
@@ -179,7 +181,7 @@ if(video is not None):
             """
             )
             
-            first_summary_chain = first_summary_prompt | llm
+            first_summary_chain = first_summary_prompt | summary_llm
             
             summary = first_summary_chain.invoke({
                 "text":docs[0].page_content
@@ -199,7 +201,7 @@ if(video is not None):
                 """
             )
             
-            refine_chain = refine_prompt | llm
+            refine_chain = refine_prompt | summary_llm
             
             with st.status("Summarizing...") as status:
                 for index, doc in enumerate(docs[1:]):
