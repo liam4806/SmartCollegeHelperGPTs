@@ -10,7 +10,7 @@ There are five specialized GPTs in this project:
 - [CourseSummaryGPT](#course-summary-gpt)
 - [QuizGPT](#quiz-gpt)
 
-All GPTs utilize conversationSummaryBufferMemory to store recent memories and provide summarized versions of older memories, enabling them to understand and remember previous conversations with the user.
+All GPTs utilize conversationSummaryBufferMemory to store recent conversations and provide summarized versions of older memories, enabling them to understand and remember previous conversations with the user.
 
 ## Document GPT
 ### Analyzes and interprets long documents, saving time by quickly extracting information.
