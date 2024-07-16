@@ -3,7 +3,12 @@ A comprehensive AI for college students. It includes tools for document analysis
 
 ## GPTs
 
-There are five specialized GPTs in this project: DocumentGPT, TherapistGPT, DenisonCourseQnA_GPT, CourseSummaryGPT, and QuizGPT.
+There are five specialized GPTs in this project: 
+- [DocumentGPT](#document-gpt)
+- [TherapistGPT](#therapist-gpt)
+- [DenisonCourseQnA_GPT](#denison-course-qna-gpt)
+- [CourseSummaryGPT](#course-summary-gpt)
+- [QuizGPT](#quiz-gpt)
 
 All GPTs utilize conversationSummaryBufferMemory to store recent memories and provide summarized versions of older memories, enabling them to understand and remember previous conversations with the user.
 
